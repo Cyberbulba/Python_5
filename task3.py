@@ -17,14 +17,11 @@ def prov(x, n):
 def vvod(n):
     while True:
         x = input('Сколько камней вы хотите убрать: ')
-        if prov(x, n):
-            return int(x)
-        print('Введите соответствующее число')
 
 
 n = randint(4, 30)
 print(f'Всего {n} камней')
-answer = input('Вы хотите делать ход первым? (+/-)\n')
+answer = input('Вы хотите делать ход первым? Если да, то нажмите +\n')
 if answer == '+':
     while True:
         print(f'Ваш ход')
